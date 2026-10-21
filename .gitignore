@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.o
+
+# Local emulator ROMs are supplied separately.
+*.rom
+
+# Local credentials and machine-specific settings.
+.env
+.env.*
+!.env.example
+.claude/settings.local.json

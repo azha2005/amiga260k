@@ -1,0 +1,2 @@
+llama68k >DF0:out_asm.txt stories260k.a5 tok512.a5t -n 128 -t 0
+llama68k_c >DF0:out_c.txt stories260k.a5 tok512.a5t -n 128 -t 0

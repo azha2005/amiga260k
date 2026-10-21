@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python scripts/verify.py 1>&2 || exit 2",
+            "timeout": 180
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(python scripts/verify.py)",
+      "Bash(python:*)",
+      "Bash(python3:*)",
+      "Bash(gcc:*)",
+      "Bash(vasmm68k_mot:*)",
+      "Bash(vc:*)"
+    ]
+  }
+}
